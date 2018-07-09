@@ -87,5 +87,15 @@
   	<p>
         <a href="https://github.com/Kagami/vmsg">vmsg</a> is a WebAssembly mp3 audio recording and encoding library based on the latest version of the <a href="http://lame.sourceforge.net/">LAME mp3 encoder</a>.
     </p>
+    <div id="controls">
+  		<button id="recordButton">Record</button>
+  	</div>
+  	<div id="formats"></div>
+  	<script type="text/javascript">
+  		var AudioContext = window.AudioContext || window.webkitAudioContext;
+		var audioCtx = new AudioContext();
+		document.getElementById("formats").innerHTML="Format: 1 channel mp3 @ "+audioCtx.sampleRate/1000+"kHz"
+		console.log(audioCtx.sampleRate);
+  	</script>
   </body>
 </html>
