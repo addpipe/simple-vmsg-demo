@@ -7,4 +7,4 @@ All the vmsg demos are React based so I thought I'd do a plain HTML/JS one. I've
 
 Live demo: [https://addpipe.com/simple-vmsg-demo/](https://addpipe.com/simple-vmsg-demo/)
 
-Blog post: https://addpipe.com/blog/recording-mp3-audio-in-html5-using-vmsg-a-webassembly-library-based-on-lame/
+Blog post: https://blog.addpipe.com/recording-mp3-audio-in-html5-using-vmsg-a-webassembly-library-based-on-lame/
