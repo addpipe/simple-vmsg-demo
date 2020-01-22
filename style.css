@@ -1,8 +1,3 @@
-*{
-	padding: 0;
-	margin: 0;
-}
-
 a {
 	color: #337ab7;
 }
@@ -94,6 +89,7 @@ audio{
 	display: block;
 	width: 100%;
 	margin-top: 0.2rem;
+	max-width: 28em;
 }
 
 li{
@@ -104,8 +100,4 @@ li{
 #formats {
 	margin-top: 0.5rem;
 	font-size: 80%;
-}
-
-audio{
-	max-width: 28em;
 }
