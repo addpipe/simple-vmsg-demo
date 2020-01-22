@@ -6,91 +6,15 @@
     <link rel="stylesheet" type="text/css" href="vmsg.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="app.js" type="module"></script>
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-      }
-      a {
-        color: #337ab7;
-      }
-      p {
-       margin-top: 1rem;
-      }
-      a:hover {
-      	color:#23527c;
-      }
-      a:visited {
-        color: #8d75a3;
-      }
-      body {
-        margin: 1rem;
-        padding: 1rem;
-        font-family: sans-serif;
-        max-width: 28rem;
-        margin: 0 auto;
-        position: relative;
-      }
-      #controls {
-        display: flex;
-        margin-top: 2rem;
-      }
-      button {
-        flex-grow: 1;
-        height: 2.5rem;
-        min-width: 2rem;
-        border: none;
-        border-radius: 0.15rem;
-        background: #ed341d;
-        margin-left: 2px;
-        box-shadow: inset 0 -0.15rem 0 rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color:#ffffff;
-        font-weight: bold;
-        font-size: 1rem;
-      }
-      button:hover, button:focus {
-        outline: none;
-        background: #c72d1c;
-      }
-      button::-moz-focus-inner {
-        border: 0;
-      }
-      button:active {
-        box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.2);
-        line-height: 3rem;
-      }
-      button:disabled {
-        pointer-events: none;
-        background: lightgray;
-      }
-      button:first-child {
-        margin-left: 0;
-      }
-      audio {
-        display: block;
-        width: 100%;
-        margin-top: 0.2rem;
-      }
-      li {
-        list-style: none;
-        margin-bottom: 1rem;
-      }
-      #formats {
-        margin-top: 0.5rem;
-        font-size: 80%;
-      }
-    </style>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-  	<h1>Simple vmsg demo</h1>
-  	<p><a href="https://github.com/Kagami/vmsg">vmsg</a> is a recent audio recording and encoding library based on a WebAssembly version of the latest <a href="http://lame.sourceforge.net/">LAME mp3 encoder</a>.
-    </p>
-    <p>Check out the <a href="https://github.com/addpipe/simple-vmsg-demo" target="_blank">code on GitHub</a> and our <a href="https://addpipe.com/blog/recording-mp3-audio-in-html5-using-vmsg-a-webassembly-library-based-on-lame/" target="_blank">blog post on recording mp3 audio in HTML5 using vmsg</a>.
-    </p>
+    <h1>Simple vmsg demo</h1>
+    <p><small>Made by the <a href="https://addpipe.com" target="_blank">Pipe Video Recording Platform</a></small></p>
+  	<p>This demo uses <a href="https://github.com/Kagami/vmsg">vmsg</a> to record and compress audio to .mp3. <a href="https://github.com/Kagami/vmsg">vmsg</a>  is a recent audio recording and encoding library based on a WebAssembly version of the latest <a href="http://lame.sourceforge.net/">LAME mp3 encoder</a>.</p>
+    <p>Check out the <a href="https://github.com/addpipe/simple-vmsg-demo" target="_blank">code on GitHub</a> and our <a href="https://addpipe.com/blog/recording-mp3-audio-in-html5-using-vmsg-a-webassembly-library-based-on-lame/" target="_blank">blog post on recording mp3 audio in HTML5 using vmsg</a>.</p>
     <div id="controls">
   		<button id="recordButton">Record</button>
   	</div>
